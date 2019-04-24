@@ -64,20 +64,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
 
 /* Your code starts here! */
 body {
@@ -288,17 +274,25 @@ button {
 	margin-left: 5%
 }
 
-/* #F4F3F4 */
-
-/* #services section {
-    width: 45%;
-    padding: 1%;
-    background-color: #F4F3F4;
-    margin: 0% 5% 5% 0%;
-    box-sizing: border-box;
-} */
-
 hr {
 	margin-bottom: 45px;
     background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+	#services section {
+		width: 100%;
+		padding: 5%;
+		margin: 0%;
+		margin-bottom: 5%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.facts-item {
+		width: 100%;
+	}
 }
