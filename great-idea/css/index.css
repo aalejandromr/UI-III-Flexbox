@@ -83,14 +83,14 @@ h1, h2, h3, h4, h5 {
 body {
 	padding: 3%;
 }
-ul li.menu-item {
-	display: inline-block;
-	padding: 2%;
-    box-sizing: border-box;
-}
 
-.main-panel {
-	background-color: red;
+ul {
+	display: flex;
+	justify-content: space-between;
+}
+ul li.menu-item {
+	align-self: center;
+    box-sizing: border-box;
 }
 
 #slogan, #snippet {
@@ -112,7 +112,9 @@ ul li.menu-item {
 
 .main-panel {
 	min-height: 30em;
-    max-height: 30em;
+	max-height: 30em;
+	justify-content: space-around;
+    align-items: center;
 }
 
 .inline-block {
@@ -185,8 +187,8 @@ nav li a {
 	max-height: 30em;
 }
 
-.child h1 {
-	font-size: 55px;
+.container h1 {
+	font-size: 70px;
 }
 
 .parent .child:first-child {
@@ -202,6 +204,7 @@ nav li a {
 }
 
 .parent .child:last-child img {
+	align-self: center;
 	width: 410px;
 }
 
@@ -213,9 +216,10 @@ button {
     background-image: none;
 }
 
-nav ul li:last-child a img {
-	position: absolute;
-    right: 0;
-    top: 51px;
-    padding: 1% 3% 0% 0%;
+.container {
+	display: flex;
+}
+
+.center-align {
+	text-align: center;
 }
