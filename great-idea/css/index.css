@@ -64,3 +64,256 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+body {
+	padding: 3%;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+}
+ul li.menu-item {
+	align-self: center;
+    box-sizing: border-box;
+}
+
+#slogan, #snippet {
+	display: inline-block;
+	height: 100%;
+	width: 40%;
+	min-height: 30rem;
+	max-height: 30rem;
+}
+
+#slogan {
+	background-color: black;
+}
+
+#snippet {
+	background-color: white;
+}
+
+
+.main-panel {
+	min-height: 30em;
+	max-height: 30em;
+	justify-content: space-around;
+    align-items: center;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.width-49 {
+	width: 49%;
+}
+
+.width-33 {
+	width: 33%;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+pre {
+	text-align: center;
+	padding: 5% 0% 0% 0%;
+}
+
+article section {
+	padding: 5% 0% 5% 0%;
+}
+
+p {
+	padding: 14px 0px 14px 0px;
+}
+
+/* article:before {
+	content: '';
+    position: absolute;
+    width: 94%;
+    height: 1px;
+    background: black;
+    top: 74%;
+    left: 3%;
+} */
+
+/* article:after {
+	content: '';
+    position: absolute;
+    width: 94%;
+    height: 1px;
+    background: black;
+    top: 178%;
+    left: 3%;
+} */
+
+footer {
+	padding: 5% 0% 5% 0%;
+}
+
+nav li a {
+	color: grey;
+    text-decoration: none;
+}
+
+.parent {
+	min-height: 30em;
+	max-height: 30em;
+}
+
+.child {
+	display: inline-block;
+	width: 49.5%;
+	min-height: 30em;
+	max-height: 30em;
+}
+
+.container h1 {
+	font-size: 70px;
+}
+
+.parent .child:first-child {
+	top: -20px;
+    bottom: 0px;
+    padding: 10% 0% 0% 0%;
+	box-sizing: border-box;
+	text-align: center
+}
+.parent .child:last-child {
+	vertical-align: bottom;
+    text-align: left;
+}
+
+.parent .child:last-child img {
+	align-self: center;
+	width: 410px;
+}
+
+button {
+	height: 27px;
+    width: 105px;
+    background-color: transparent;
+    font-family: inherit;
+    background-image: none;
+}
+
+.container {
+	display: flex;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.services-header-img {
+	flex-grow: 1;
+}
+
+#services {
+	display: flex;
+	flex-wrap: wrap;
+}
+#services section {
+	width: 47.5%;
+	padding: 2%;
+	background-color: #F4F3F4;
+    border: 1px solid black;
+}
+
+.table {
+	margin-bottom: 5%;
+}
+
+.table:nth-child(2n+1) {
+	margin-right: 5%;
+}
+
+.table button {
+	height: 27px;
+    width: 105px;
+    background-color: rgb(255, 253, 253);;
+    font-family: inherit;
+	background-image: none;
+	border-radius: 3px;
+    border-color: black;
+}
+
+.services-section h1 {
+	font-size: 28px;
+}
+
+.services-section {
+	margin: 3% 0% 3% 0%;
+}
+
+.service-main-panel {
+	margin-top: 3%;
+}
+
+.facts-item {
+	width: 50%
+}
+
+.flew-grown-1 {
+	flex-grow: 1
+}
+
+.facts-list {
+	display: flex;
+	flex-direction: column;
+	list-style: square
+}
+
+.fact-item {
+	padding: 0% 0% 3% 5%;
+	margin-left: 5%
+}
+
+hr {
+	margin-bottom: 45px;
+    background-color: black;
+}
+
+.contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-item {
+	width: 50%;
+	padding: 2%;
+}
+
+input[type=text], textarea {
+	width: 75%;
+    height: 20px;
+}
+
+textarea {
+	height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+	#services section {
+		width: 100%;
+		padding: 5%;
+		margin: 0%;
+		margin-bottom: 5%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.facts-item {
+		width: 100%;
+	}
+}
